@@ -12,7 +12,8 @@ namespace mvcKoReact
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
-                        "~/Scripts/knockout-3.5.0.js"));
+                        "~/Scripts/knockout-3.5.0.js",
+                        "~/Scripts/knockout-bind-react/knockout-bind-react.js"));
 
             // 使用開發版本的 Modernizr 進行開發並學習。然後，當您
             // 準備好可進行生產時，請使用 https://modernizr.com 的建置工具，只挑選您需要的測試。

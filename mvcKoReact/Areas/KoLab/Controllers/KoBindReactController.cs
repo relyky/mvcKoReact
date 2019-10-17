@@ -13,5 +13,12 @@ namespace mvcKoReact.Areas.KoLab.Controllers
         {
             return View();
         }
+
+        // GET: KoLab/KoBindReact
+        public ActionResult Demo()
+        {
+            return View();
+        }
+
     }
 }

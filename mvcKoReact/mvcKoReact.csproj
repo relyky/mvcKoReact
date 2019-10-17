@@ -173,6 +173,7 @@
     <Content Include="Areas\KoLab\Views\_ViewStart.cshtml" />
     <Content Include="Areas\KoLab\Views\Greeting\Index.cshtml" />
     <Content Include="Areas\KoLab\Views\KoBindReact\Index.cshtml" />
+    <Content Include="Areas\KoLab\Views\KoBindReact\Demo.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -180,6 +181,7 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\knockout-3.5.0.debug.js" />
     <Content Include="Scripts\knockout-3.5.0.js" />
+    <Content Include="Scripts\knockout-bind-react\knockout-bind-react.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
