@@ -1,9 +1,9 @@
 ﻿@model mvcKoReact.Models.UserInfo
 @{
-    ViewBag.Title = "Knockout Greeting";    
+    TempData["Title"] = "Knockout Greeting";
 }
 
-<h2>@ViewBag.Title</h2>
+<h2>@TempData["Title"]</h2>
 <p>說明：MVC Model → Ko View Model → bind 前端元件</p>
 <p>參考：<a href="http://learn.knockoutjs.com/#/?tutorial=intro">help main sitelearn.knockoutjs.com</a></p>
 <hr/>
