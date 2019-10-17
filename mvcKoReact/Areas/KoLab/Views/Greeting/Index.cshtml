@@ -1,0 +1,41 @@
+﻿@model mvcKoReact.Models.UserInfo
+@{
+    ViewBag.Title = "Knockout Greeting";    
+}
+
+<h2>@ViewBag.Title</h2>
+<p>說明：MVC Model → Ko View Model → bind 前端元件</p>
+<p>參考：<a href="http://learn.knockoutjs.com/#/?tutorial=intro">help main sitelearn.knockoutjs.com</a></p>
+<hr/>
+<p>First name: <strong data-bind="text: firstName">todo</strong></p>
+<p>Last name: <strong data-bind="text: lastName">todo</strong></p>
+<p>Full name: <strong data-bind="text: fullName"></strong></p>
+<br />
+<h4>2-way binding</h4>
+<p>First name: <input data-bind="value: firstName" /></p>
+<p>Last name: <input data-bind="value: lastName" /></p>
+<button data-bind="click: handleCapitalizeLastName">Go caps 讓姓式變大寫</button>
+
+@section scripts{
+<script type="text/javascript">
+    function AppViewModel() {
+            // Properties
+            this.firstName = ko.observable('@Model.firstName');
+            this.lastName = ko.observable('@Model.lastName');
+
+            // Defining computed values
+            this.fullName = ko.computed(function () {
+                return this.firstName() + " " + this.lastName();
+            }, this);
+
+            // evnet handler
+            this.handleCapitalizeLastName = function () {
+                var currentVal = this.lastName();        // Read the current value
+                this.lastName(currentVal.toUpperCase()); // Write back a modified value
+            };
+        }
+
+        // Activates knockout.js
+        ko.applyBindings(new AppViewModel());
+</script>
+}

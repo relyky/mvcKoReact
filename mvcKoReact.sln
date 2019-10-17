@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mvcKoReact", "mvcKoReact\mvcKoReact.csproj", "{C6C45E50-A9C1-4F70-BF95-4C415F43AE12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6C45E50-A9C1-4F70-BF95-4C415F43AE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6C45E50-A9C1-4F70-BF95-4C415F43AE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6C45E50-A9C1-4F70-BF95-4C415F43AE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6C45E50-A9C1-4F70-BF95-4C415F43AE12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {65A62130-B039-487E-B53A-AAF3094290B4}
+	EndGlobalSection
+EndGlobal
