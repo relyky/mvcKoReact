@@ -4,19 +4,23 @@ import ReactDOM from 'react-dom'
 
 function App() {
     const [formId, setFormId] = useState('FormA01')
+    const [appForms, setAppForms] = useState({})
 
-    console.log('appForms')
-    const appForms = {
-        FormA01: lazy(() => import('./js/AppForm/FormA01/AppForm.jsx')),
-        FormB02: lazy(() => import('./js/AppForm/FormB02/AppForm.jsx')),
-        FormC03: lazy(() => import('./js/AppForm/FormC03/AppForm.jsx'))
-    }
-    const AppForm = appForms[formId]
+    useEffect(() => {
+        const appForms = {
+            FormA01: lazy(() => import('./js/AppForm/FormA01/AppForm.jsx')),
+            FormB02: lazy(() => import('./js/AppForm/FormB02/AppForm.jsx')),
+            FormC03: lazy(() => import('./js/AppForm/FormC03/AppForm.jsx'))
+        }
+        setAppForms(appForms)
+    },[]) // <--- 此[]將使useEffect只執行一次
 
     console.log('render')
+    const AppForm = appForms[formId] // 取得顯示目標元件
     return (
         <div>
-            <h1>{formId}</h1>
+            <h1>MainFrame</h1>
+            <p>{formId}</p>
             <ul>
                 <li onClick={() => setFormId('FormA01')}>FormA01</li>
                 <li onClick={() => setFormId('FormB02')}>FormB02</li>
