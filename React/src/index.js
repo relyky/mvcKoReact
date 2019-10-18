@@ -8,6 +8,7 @@ function App() {
 
     useEffect(() => {
         const appForms = {
+            FormContainer: lazy(()=> import('./js/components/container/FormContainer.jsx')),
             FormA01: lazy(() => import('./js/AppForm/FormA01/AppForm.jsx')),
             FormB02: lazy(() => import('./js/AppForm/FormB02/AppForm.jsx')),
             FormC03: lazy(() => import('./js/AppForm/FormC03/AppForm.jsx'))
@@ -20,8 +21,9 @@ function App() {
     return (
         <div>
             <h1>MainFrame</h1>
-            <p>{formId}</p>
+            <p>Bread crumbs:> {formId}</p>
             <ul>
+                <li onClick={() => setFormId('FormContainer')}>FormContainer</li>
                 <li onClick={() => setFormId('FormA01')}>FormA01</li>
                 <li onClick={() => setFormId('FormB02')}>FormB02</li>
                 <li onClick={() => setFormId('FormC03')}>FormC03</li>
