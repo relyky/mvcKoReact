@@ -43,6 +43,11 @@
     <Compile Include="src\index.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\js\AppForm\FormA01\AppForm.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\js\AppForm\FormB02\AppForm.jsx" />
+    <Compile Include="src\js\AppForm\FormC03\AppForm.jsx" />
     <Compile Include="src\js\components\container\FormContainer.jsx">
       <SubType>Code</SubType>
     </Compile>
@@ -57,9 +62,13 @@
     <Folder Include="dist\" />
     <Folder Include="src\" />
     <Folder Include="src\js\" />
+    <Folder Include="src\js\AppForm\FormA01\" />
+    <Folder Include="src\js\AppForm\FormB02\" />
+    <Folder Include="src\js\AppForm\FormC03\" />
     <Folder Include="src\js\components\" />
     <Folder Include="src\js\components\container\" />
     <Folder Include="src\js\components\presentational\" />
+    <Folder Include="src\js\AppForm\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
