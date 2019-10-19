@@ -219,6 +219,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\KoLab\Models\" />
+    <Folder Include="Scripts\bundle\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

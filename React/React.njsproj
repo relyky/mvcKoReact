@@ -54,12 +54,22 @@
     <Compile Include="src\js\components\presentational\Input.jsx">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="src\js\components\presentational\InputText.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\js\components\widget\TestWidget.jsx">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="webpack.components.config.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="webpack.config.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="dist\" />
+    <Folder Include="bundle\" />
     <Folder Include="src\" />
     <Folder Include="src\js\" />
     <Folder Include="src\js\AppForm\FormA01\" />
@@ -67,6 +77,7 @@
     <Folder Include="src\js\AppForm\FormC03\" />
     <Folder Include="src\js\components\" />
     <Folder Include="src\js\components\container\" />
+    <Folder Include="src\js\components\widget\" />
     <Folder Include="src\js\components\presentational\" />
     <Folder Include="src\js\AppForm\" />
   </ItemGroup>
