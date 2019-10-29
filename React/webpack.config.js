@@ -1,5 +1,7 @@
-﻿const HtmlWebPackPlugin = require("html-webpack-plugin");
+﻿const path = require('path');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
+    context: __dirname,
     module: {
         rules: [
             {
@@ -18,6 +20,11 @@ module.exports = {
                 ]
             }
         ]
+    },
+    resolve: {
+        alias: {
+            common: path.resolve(__dirname, 'src/js/common/'),
+        }
     },
     plugins: [
         new HtmlWebPackPlugin({
