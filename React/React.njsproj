@@ -31,7 +31,6 @@
     <Content Include=".babelrc">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="dist\index.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="src\index.html">
@@ -39,7 +38,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dist\main.js" />
     <Compile Include="src\index.js">
       <SubType>Code</SubType>
     </Compile>
@@ -48,6 +46,9 @@
     </Compile>
     <Compile Include="src\js\AppForm\FormB02\AppForm.jsx" />
     <Compile Include="src\js\AppForm\FormC03\AppForm.jsx" />
+    <Compile Include="src\js\AppForm\FormD04\AppForm.jsx">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\js\components\container\FormContainer.jsx">
       <SubType>Code</SubType>
     </Compile>
@@ -75,6 +76,7 @@
     <Folder Include="src\js\AppForm\FormA01\" />
     <Folder Include="src\js\AppForm\FormB02\" />
     <Folder Include="src\js\AppForm\FormC03\" />
+    <Folder Include="src\js\AppForm\FormD04\" />
     <Folder Include="src\js\components\" />
     <Folder Include="src\js\components\container\" />
     <Folder Include="src\js\components\widget\" />
